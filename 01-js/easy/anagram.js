@@ -8,7 +8,14 @@
 */
 
 function isAnagram(str1, str2) {
+  var arr1 = str1.toLowerCase().split("").sort().join("")
+  var arr2 = str2.toLowerCase().split("").sort().join("")
+  return arr1 == arr2
+
 
 }
 
+
+var ans = isAnagram("hello!","elhlo")
+console.log(ans)
 module.exports = isAnagram;
